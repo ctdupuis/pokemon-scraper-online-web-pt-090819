@@ -14,6 +14,7 @@ class Pokemon
   def self.save(name, type, db)
     sql = 'INSERT INTO pokemon (name, type) VALUES (?,?)'
     db.execute(sql, name, type)
+<<<<<<< HEAD
   end
   
   def self.find(id, db)
@@ -21,4 +22,8 @@ class Pokemon
     Pokemon.new(id: info[0], name: info[1], type: info[2], db: db)
   end
   
+=======
+    # binding.pry
+  end
+>>>>>>> 4aed4fb1e419a00465bd3cf643b321308df08e2f
 end
